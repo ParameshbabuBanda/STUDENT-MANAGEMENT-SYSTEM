@@ -66,5 +66,7 @@ student-management-system/
 
 The database `may_2025.db` will be created automatically with the required table.
 
+## OUTPUT
+![Image](https://github.com/user-attachments/assets/bfd69b4a-1cfa-4c87-b9e0-85eed048eaa5)
 
 
