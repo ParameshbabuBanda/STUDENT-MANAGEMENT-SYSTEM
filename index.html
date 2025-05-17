@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Student List</title></head>
+<body>
+    <h2>All Students</h2>
+    <a href="/add">Add Student</a>
+    <table border="1">
+        <tr><th>ID</th><th>Name</th><th>Age</th><th>Grade</th><th>Actions</th></tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.grade }}</td>
+            <td>
+                <a href="/update/{{ student.id }}">Edit</a> |
+                <a href="/delete/{{ student.id }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
